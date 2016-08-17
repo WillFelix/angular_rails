@@ -1,0 +1,41 @@
+<div ng-include="'/assets/users/view/_header.html'"></div>
+
+<md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="100" layout="column">
+      <md-card md-theme="default">
+
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">#{{user.id}}</span>
+            <hr />
+
+            <p ng-show="user.name">
+              <strong class="md-head">Name:</strong>
+              <span class="md-subhead">{{user.name}}</span>
+            </p>
+
+            <p ng-show="user.email">
+              <strong class="md-head">Email:</strong>
+              <span class="md-subhead">{{user.email}}</span>
+            </p>
+
+            <p ng-show="user.gender">
+              <strong class="md-head">Gender:</strong>
+              <span class="md-subhead">{{user.gender}}</span>
+            </p>
+
+            <p ng-show="user.birthdate">
+              <strong class="md-head">Birthdate:</strong>
+              <span class="md-subhead">{{user.birthdate}}</span>
+            </p>
+          </md-card-title-text>
+        </md-card-title>
+
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-click="edit(user)">Edit</md-button>
+          <md-button ng-click="remove(user)"class="md-warn">Remove</md-button>
+        </md-card-actions>
+
+      </md-card>
+    </div>
+</md-content>

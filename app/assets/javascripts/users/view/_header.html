@@ -1,0 +1,16 @@
+<md-toolbar layout="row" class="md-hue-2">
+  <div class="md-toolbar-tools">
+    <h2>
+      <span><a href="#/users">Users</a></span>
+    </h2>
+    <span flex></span>
+  </div>
+
+  <a ng-hide="user" href="#/users/new" class="md-button" md-no-ink="" layout-padding>
+    <span class="ng-binding ng-scope">Incluir</span>
+  </a>
+
+  <a ng-show="user" href="#/users" class="md-button" md-no-ink="" layout-padding>
+    <span class="ng-binding ng-scope">Voltar</span>
+  </a>
+</md-toolbar>
