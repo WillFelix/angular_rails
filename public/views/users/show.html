@@ -1,4 +1,4 @@
-<div ng-include="'/assets/users/views/_header.html'"></div>
+<div ng-include="'/views/users/_header.html'"></div>
 
 <md-content class="md-padding" layout-xs="column" layout="row">
     <div flex-xs flex-gt-xs="100" layout="column">
@@ -32,7 +32,7 @@
         </md-card-title>
 
         <md-card-actions layout="row" layout-align="end center">
-          <md-button ng-click="edit(user)">Edit</md-button>
+          <md-button href="#/user/{{user.id}}/edit">Edit</md-button>
           <md-button ng-click="remove(user)"class="md-warn">Remove</md-button>
         </md-card-actions>
 

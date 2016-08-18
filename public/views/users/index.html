@@ -1,9 +1,9 @@
-<div ng-include="'/assets/users/views/_header.html'"></div>
+<div ng-include="'/views/users/_header.html'"></div>
 
 <md-content>
   <md-list flex="">
     <md-subheader class="md-no-sticky">{{users.length}} line item</md-subheader>
-    <md-list-item class="md-3-line" ng-repeat="user in users" ng-click="show(user)">
+    <md-list-item class="md-3-line" ng-repeat="user in users" href="#/user/{{user.id}}">
       <div class="md-list-item-text" layout="column">
         <h3>#{{ user.id }}</h3>
       </div>
