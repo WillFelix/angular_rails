@@ -1,6 +1,7 @@
 angular.module('angular-rails', [
   'ui.router'
   'ngMaterial'
+  'ngMessages'
   'templates'
 ]).config [
   '$stateProvider'

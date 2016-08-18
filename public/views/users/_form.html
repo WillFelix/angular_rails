@@ -4,7 +4,7 @@
 
   <md-input-container class="md-block" flex-gt-sm>
     <label>Name</label>
-    <input required ng-model="user.name">
+    <input required name="name" ng-model="user.name">
     <div ng-messages="userForm.name.$error">
       <div ng-message="required">This is required.</div>
     </div>
@@ -12,7 +12,7 @@
 
   <md-input-container class="md-block" flex-gt-sm>
     <label>E-mail</label>
-    <input required type="email" ng-model="user.email">
+    <input required name="email" type="email" ng-model="user.email">
     <div ng-messages="userForm.email.$error">
       <div ng-message="required">This is required.</div>
       <div ng-message="email">Invalid email.</div>
