@@ -35,28 +35,25 @@ angular.module("angular-rails").controller('UsersCtrl', [
 
       var msg = "Saved successfully!";
       var id = userForm.id;
+      var obj = {
+        name: userForm.name,
+        email: userForm.email,
+        gender: userForm.gender,
+        birthdate: userForm.birthdate
+      };
+
       if (userForm.id != null) {
 
         msg = "Updated successfully!";
+        obj.id = userForm.id;
         users.update({
-          user: {
-            id: userForm.id,
-            name: userForm.name,
-            email: userForm.email,
-            gender: userForm.gender,
-            birthdate: userForm.birthdate
-          }
+          user: obj
         });
 
       } else {
 
         users.create({
-          user: {
-            name: userForm.name,
-            email: userForm.email,
-            gender: userForm.gender,
-            birthdate: userForm.birthdate
-          }
+          user: obj
         });
 
       }

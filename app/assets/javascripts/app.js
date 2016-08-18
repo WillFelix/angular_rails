@@ -7,7 +7,7 @@ angular.module('angular-rails', ['ui.router', 'ngMaterial', 'templates'])
     $stateProvider
     .state('users', {
       url: '/users',
-      templateUrl: '/assets/users/view/index.html',
+      templateUrl: '/assets/users/views/index.html',
       controller: 'UsersCtrl',
       resolve: {
         postPromise: ['users', function(users) {
@@ -19,7 +19,7 @@ angular.module('angular-rails', ['ui.router', 'ngMaterial', 'templates'])
 
     .state('user', {
       url: '/user/{id}',
-      templateUrl: '/assets/users/view/show.html',
+      templateUrl: '/assets/users/views/show.html',
       controller: 'UsersCtrl',
       resolve: {
         user: function($stateParams, users) {
@@ -30,7 +30,7 @@ angular.module('angular-rails', ['ui.router', 'ngMaterial', 'templates'])
 
     .state('newUser', {
       url: '/users/new',
-      templateUrl: '/assets/users/view/new.html',
+      templateUrl: '/assets/users/views/new.html',
       controller: 'UsersCtrl',
       resolve: {
         user: function(){}
@@ -39,7 +39,7 @@ angular.module('angular-rails', ['ui.router', 'ngMaterial', 'templates'])
 
     .state('editUser', {
       url: '/user/{id}/edit',
-      templateUrl: '/assets/users/view/edit.html',
+      templateUrl: '/assets/users/views/edit.html',
       controller: 'UsersCtrl',
       resolve: {
         user: function($stateParams, users) {

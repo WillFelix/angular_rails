@@ -38,6 +38,9 @@
 
   <div layout-wrap layout-gt-sm="row">
     <md-button type="submit" class="md-raised md-primary">SAVE</md-button>
+
+    <md-button ng-hide="user" href="#/users" class="md-raised md-warn">CANCEL</md-button>
+    <md-button ng-show="user" href="#/user/{{user.id}}" class="md-raised md-warn">CANCEL</md-button>
   </div>
 
 </form>

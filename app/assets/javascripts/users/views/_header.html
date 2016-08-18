@@ -1,0 +1,11 @@
+<md-toolbar layout="row" class="md-hue-2">
+  <div class="md-toolbar-tools">
+    <h2>
+      <span><a href="#/users">Users</a></span>
+    </h2>
+    <span flex></span>
+  </div>
+
+  <md-button ng-hide="user" href="#/users/new" layout-padding>New</md-button>
+  <md-button ng-show="user" href="#/users" layout-padding>Back</md-button>
+</md-toolbar>
