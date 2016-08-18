@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: angular_rails
+  username: *****
+  password: *****
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: angular_rails_test
+  username: *****
+  password: *****
+  host: localhost
